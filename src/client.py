@@ -29,7 +29,7 @@ while True:
       for letter in range(len(compile_lines[program_counter]) - 10):
         new_query_add = new_query_add + compile_lines[program_counter][new_query_count]
         new_query_count += 1
-      tables.append(new_query_add)
+      queries.append(new_query_add)
       print(f'Your new query {new_query_add} has been assigned at the index address {len(queries) - 1}.')
       new_query_add = ""
       new_query_count = 0
