@@ -1,9 +1,8 @@
 <h1 align="center">SillyBase</h1>
 <p align="center"><i>The worst database you will ever come across.</i></p>
-<hr>
-<h1 align="center">SillyScript: The SillyBase Programming Language</h1>
+<h2 align="center">SillyScript: The SillyBase Programming Language</h2>
 <p align="center"><i>This database comes with it's own programming language that transpiles to Python!</i></p>
-<h2 align="center">Make a new query and manage it</h2>
+<h3 align="center">Make a new query and manage it</h3>
 <p align="center">To create and alter the data of a new query, you'll need to define the table by writing:  </p>
 
 
