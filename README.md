@@ -46,7 +46,6 @@
 
 
 
-
     NEW QUERY Pennywise
     INSERT AT 0 Nickelsmart
     LOGS 0
@@ -54,3 +53,37 @@
     LOGS 0
     INSERT AT 0 Coin-knowledge
     LOGS 0
+
+
+
+
+
+<h3 align="center">Export data from your queries</h3>
+<p align="center">You are able to export the queries from your .sib files to a static HTML file by simply writing the following at the end of the file:</p>
+
+
+
+
+    NEW QUERY Goobin
+    INSERT AT 0 Hey
+    LOGS 0
+    INSERT AT 0 Are-you
+    LOGS 0
+    INSERT AT 0 Goobin?
+    LOGS 0
+    SAVE FILE
+
+
+
+
+<p align="center">Since we are only using one query in this project, you should get a static HTML file that would show the following:</p>
+
+
+
+
+    <p>Goobin?</p>
+
+
+
+
+
