@@ -10,3 +10,4 @@ try_out.addEventListener('click', () => {
   const output = execSync('make sillybase', { encoding: 'utf-8' });
   alert(output);
 })
+document.body.appendChild(try_out)
