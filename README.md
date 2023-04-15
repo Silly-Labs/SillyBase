@@ -1,7 +1,20 @@
 <h1 align="center">SillyBase</h1>
 <p align="center"><i>The worst database you will ever come across.</i></p>
+<h2 align="center">Build the interperter</h2>
+<p align="center">The project is held together by a single Makefile and can be used to run the interperter as so:  </p>
+
+
+
+
+    make sillybase
+
+
+
+
+
+
 <h2 align="center">SillyScript: The SillyBase Programming Language</h2>
-<p align="center"><i>This database comes with it's own programming language that transpiles to Python!</i></p>
+<p align="center"><i>This database comes with it's own programming language that.. isn't SQL!</i></p>
 <h3 align="center">Make a new query and manage it</h3>
 <p align="center">To create and alter the data of a new query, you'll need to define the table by writing:  </p>
 

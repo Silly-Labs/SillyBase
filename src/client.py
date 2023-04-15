@@ -1,4 +1,8 @@
 import os
+import random
+import sys
+import time
+from time import sleep
 
 compile_file = ""
 compile_lines = []
@@ -16,11 +20,22 @@ insert_addr_str = ""
 insert_addr = 0
 insert_add_count = 0
 insert_str = ""
+compile_to_count = 0
+
+# lmao what are these names :skull:
+random_names = ["cosmic-cat", "silly-string", "voloptous-table", "stainless-stain", "rusted-ownership", "weakly-typed", "goober-energy"]
 
 os.system("clear")
 while True:
   prompt = input("Type in file name (no format):  ")
-  compile_file = open(f'src/{prompt}.sib', 'r')
+  if prompt == "exit()":
+    os.system("clear")
+    print("Thank you for using SillyBase. Sillying out.")
+    time.sleep(1.5)
+    os.system("clear")
+    sys.exit()
+  else:
+    compile_file = open(f'src/{prompt}.sib', 'r')
   for line in compile_file:
     compile_lines.append(line.strip())
   for line in compile_lines:
@@ -60,7 +75,15 @@ while True:
       insert_addr_count = 0
       insert_add_count = 0
       insert_addr_str = ""
+    elif compile_lines[program_counter] == "SAVE FILE":
+      with open(f'result/{random_names[random.randint(0,6)]}.html', 'a') as static_file:
+        compile_to_count = 0
+        while compile_to_count < len(queries):
+          static_file.write(f'<p>{queries[compile_to_count]}</p>\n')
+          compile_to_count += 1
+        print("Queries written to static HTML.")
     program_counter += 1
   compile_lines.clear()
   queries.clear()
   program_counter = 0
+  compile_to_count = 0
