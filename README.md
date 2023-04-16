@@ -81,9 +81,30 @@
 
 
 
-    <p>Goobin?</p>
+    <table>
+      <tr>
+        <td>Goobin?</td>
+      </tr>
+    </table>
 
 
 
 
 
+<h3 align="center">Select objects as single variable.</h3>
+<p align="center">You can assign an address to a 'select' variable that can be called by writing "SELECTED" in the places where you'd usually put in addressess, like so:
+    
+    
+    
+    
+    NEW QUERY Wrong!
+    NEW QUERY Wrong!
+    NEW QUERY Right!
+    
+    SELECT 2
+    LOGS SELECTED
+
+    
+    
+    
+    
