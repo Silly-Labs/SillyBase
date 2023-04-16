@@ -19,21 +19,11 @@
       </div>
       <h1>test it or smth' idk</h1>
       <input id="test"></input>
-    <script>
-      import { execSync } from 'child_process'
-      const execSync = require('child_process').execSync;
-
-       // just playing around with stuff
-       var query = document.getElementByID("test").value;
-       const try_out = document.createElement('button')
-
-       try_out.innerText = 'run the code';
-       try_out.addEventListener('click', () => {
-           const output = execSync('make sillybase', { encoding: 'utf-8' });
-           alert(output);
-       })
-       document.body.appendChild(try_out)
-    </script>
+      <script>
+         // just playing around with stuff
+         var query = document.getElementByID("test").value;
+         alert(query);
+      </script>
     </center>
   </body>
 </html>
